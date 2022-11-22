@@ -17,30 +17,39 @@
     <!-- Import Fontawsome -->
     <script src="https://kit.fontawesome.com/ed203a7d80.js" crossorigin="anonymous"></script>
     <style>
-      .normal {
+        #orange {
+            background-color: #ff8800;
+        }
+        #purple {
+            background-color: #b79ced;
+        }
+        .hard {
         background-color: #ef7a85 !important;
-      }
+        }
+    </style>
     </style>
 </head>
 <body>
   <h2 class="name-game">SIMONIE!</h2>
   <p class="about-game">Practice your memory with SIMONIE :)</p>
-  <a class="play-mode normal" href="">Normal Mode</a> <a class="play-mode hard" href="hardMode.html">Hard Mode</a>
+    <a class="play-mode normal" href="normalMode.html">Normal Mode</a> <a class="play-mode hard" href="">Hard Mode</a>
     <div class="container display" id="simon">
       <div class="row">
         <div class="sGame container">
           <div class="row">
             <div class="container button-container">
-              <!--color on (pink & green)-->
+              <!--color on -->
               <div class="row">
                 <div class="countRound">1</div>
-                <div class="col-6 game-button playBtn" id="pink"></div>
-                <div class="col-6 game-button playBtn" id="green"></div>
+                <div class="col-4 game-button playBtn" id="pink"></div>
+                <div class="col-4 game-button playBtn" id="green"></div>
+                <div class="col-4 game-button playBtn" id="purple"></div>
               </div>
-              <!--color on (yellow & blue)-->
+              <!--color on -->
               <div class="row">
-                <div class="col-6 game-button playBtn" id="yellow"></div>
-                <div class="col-6 game-button playBtn" id="blue"></div>
+                <div class="col-4 game-button playBtn" id="yellow"></div>
+                <div class="col-4 game-button playBtn" id="blue"></div>
+                <div class="col-4 game-button playBtn" id="orange"></div>
               </div>
             </div>
             </div>
@@ -55,6 +64,6 @@
           </div>
         </div>
       </div>
-    <script src="script.js"></script>
+    <script src="hardMode.js"></script>
 </body>
 </html>
